@@ -1,10 +1,10 @@
 :root {
-    --bg: #ca262688;
-    --text: #5c585899;
-    --Navbgpill: #bd7e7e03;
-    --borderNav: #b18e8e99;
+    --bg: #550e0ef4;
+    --text: #f8f3f399;
+    --Navbgpill: #2877c138;
+    --borderNav: #04112abf;
     --gridcolor: #999;
-
+    --cart: #eeee2ec6;
 
    
 }
@@ -158,6 +158,11 @@ body {
 
 }
 
+
+
+
+
+
 .add-btn {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
@@ -171,5 +176,101 @@ body {
 
 }
 .add-btn:active {
+    transform: scale(0.94);
+}
+
+
+
+
+.cart-page {
+    max-width: 600px;
+    margin: 60px auto 0;
+    padding: 0 16px 60px;
+}
+
+.cart-title {
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border: 2px solid var(--borderNav);
+    border-radius: 12px;
+    background: var(--gridcolor);
+}
+
+.cart-name {
+    flex: 1;
+    font-weight: 600;
+}
+.cart-summary {
+    margin-top: 24px;
+    padding: 18px;
+    border: 2px solid var(--cart);
+    border-radius: 12px;
+    background: var(--cart);
+    
+}
+
+.summary-line {
+    margin-bottom: 6px;
+}
+
+.empty-cart {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.remove-btn {
+    border: 1px solid var(--cart);
+    background: transparent;
+    color: var(--text);
+    border-radius: 999px;
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+
+
+
+}
+
+.remove-btn:hover {
+    background: #e3a02399;
+}
+
+.remove-btn:active {
+    transform: scale(0.9s);
+}
+
+.clear-btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: 16px auto 0;
+    padding: 10px 20px;
+    border: 1px solid var(--borderNav);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.clear-btn:hover {
+    background: #e3a02399;  
+    
+}
+
+.clear-btn:active {
     transform: scale(0.94);
 }
