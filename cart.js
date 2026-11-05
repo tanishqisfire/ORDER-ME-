@@ -75,7 +75,7 @@ function showCart() {
         clearBtn.style.display = "none";
         return;
     }
-    summaryDiv.style.display = "block";
+    summaryDiv.style.display = "flex";
     clearBtn.style.display = "block";
 
     let subtotal = 0;
@@ -106,7 +106,30 @@ function showCart() {
         });
         cartItemsDiv.appendChild(row);
     });
-    summaryDiv.innerHTML = `<p class="summary-line">Subtotal: <strong>$${subtotal}</strong></p>`
+    summaryDiv.innerHTML = `
+    <p class="summary-line">Subtotal: <strong>$${subtotal}</strong></p>
+    <button class="order-btn">Place Order😋</button>
+    `;
+
+    const orderBtn = summaryDiv.querySelector(".order-btn");
+    orderBtn.addEventListener("click", function () {
+        
+        const orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+        const newOrder = {
+            items: cart,
+            total: subtotal
+        };
+
+        orders.push(newOrder);
+
+        localStorage.setItem("orders", JSON.stringify(orders));
+        localStorage.removeItem("cart");
+
+        window.location.href = "order.html";
+        
+        
+    });
 }
 
 showCart();
