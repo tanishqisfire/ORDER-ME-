@@ -1,27 +1,26 @@
 const menu = {
     mains: [
-        { name: "Dish1", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "m1", price: 200},
-        { name: "Dish2", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "m2", price: 200},
-        { name: "Dish3", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "m3", price: 200},
-        { name: "Dish4", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "m4", price: 200},
+        { name: "Curyy!!", image: "images/curry.jpg", id: "m1", price: 4500},
+        { name: "Fishyy", image: "images/Fish.jpeg", id: "m2", price: 7000},
+        { name: "Shoeshi", image: "images/shushii.jpeg", id: "m3", price: 23000},
+        { name: "LeftOverFood", image: "images/LeftOverFood.jpg", id: "m4", price: 0},
     ],
     snacks: [
-        { name: "Dish1", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "s1", price: 200},
-        { name: "Dish2", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "s2", price: 200},
-        { name: "Dish3", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "s3", price: 200},
-        { name: "Dish4", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "s4", price: 200},
+        { name: "Boorger", image: "images/Burger.jpeg", id: "s1", price: 20},
+        { name: "French Fries🇫🇷", image: "images/FrenchFries.jpg", id: "s2", price: 80},
+        { name: "Popcorn", image: "images/popcorn.jpg", id: "s3", price: 500},
+        { name: "Dumplings", image: "images/dumplings.jpeg", id: "s4", price: 9050},
     ],
     drinks: [
-        { name: "Dish1", image: "./Orange_Juice.jpg", id: "dr1", price: 200},
-        { name: "Dish2", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "dr2", price: 200},
-        { name: "Dish3", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "dr3", price: 200},
-        { name: "Dish4", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "dr4", price: 200},
+        { name: "Orange Juice", image: "images/Orange_Juice.jpg", id: "dr1", price: 2},
+        { name: "Diet Coke", image: "images/dietcoke.jpg", id: "dr2", price: 500000},
+        { name: "Tea", image: "images/tea.png", id: "dr3", price: 500},
+        { name: "water", image: "images/water.jpg", id: "dr4", price: 0},
     ],
     desserts: [
-        { name: "Dish1", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "ds1", price: 200},
-        { name: "Dish2", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "ds2", price: 200},
-        { name: "Dish3", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "ds3", price: 200}, 
-        { name: "Dish4", image: "https://au.gozney.com/cdn/shop/articles/Baguettes_Richard_Bertinet_-_Large1_7624d2aa-d85a-42c9-92c6-38697bb11a21.jpg?v=1748373571", id: "ds4", price: 200},
+        { name: "Ice creamyy", image: "images/icecream.jpg", id: "ds1", price: 400},
+        { name: "Pastry of uhh...", image: "images/uhhh...Pastry.jpeg", id: "ds2", price: 84000},
+        { name: "Baguette🇫🇷", image: "images/baguette.png", id: "ds3", price: 6000}, 
     ]
 
 };
