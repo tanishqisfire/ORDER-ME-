@@ -21,6 +21,28 @@ function removeOne(id) {
     showCart();
 }
 
+function addOne(id) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existing = cart.find(function (item) {
+        return item.id === id;
+    });
+
+    existing.qty += 1;
+    
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showCart();
+}
+
+
+
+
+
+
+
+
+
 
 
 clearBtn.addEventListener("click", function () {
@@ -66,13 +88,21 @@ function showCart() {
         row.className = "cart-row";
         row.innerHTML = `
         <span class="cart-name">${item.name}</span>
-        <span class="cart-qty">x ${item.qty}</span>
+        <div class="qty-controls">
+         <button class="remove-btn">-</button>
+         <span class="cart-qty">x ${item.qty}</span>
+         <button class="add-one-btn">+</button>
+        </div>
         <span class="cart-line">$${lineTotal}</span>
-        <button class="remove-btn">-</button>
         `;
         const removeBtn = row.querySelector(".remove-btn");
         removeBtn.addEventListener("click", function () {
             removeOne(item.id)
+        });
+
+        const addOneBtn = row.querySelector(".add-one-btn");
+        addOneBtn.addEventListener("click", function () {
+            addOne(item.id);
         });
         cartItemsDiv.appendChild(row);
     });

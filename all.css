@@ -1,12 +1,10 @@
 :root {
     --bg: #550e0ef4;
     --text: #f8f3f399;
-    --Navbgpill: #2877c138;
-    --borderNav: #04112abf;
+    --Navbgpill: #da3b3b38;
+    --borderNav: #3c1915;
     --gridcolor: #999;
-    --cart: #eeee2ec6;
-
-   
+    --hover: #e3a02399; 
 }
 
 * {
@@ -66,7 +64,7 @@ body {
 
 .nav-pills a:hover {
     transform: translateY(-2px);
-    background: #f0bcd0f3;
+    background: var(--hover);
 }
 
 
@@ -118,6 +116,13 @@ body {
     transition: transform 0.25s ease, background 0.25s ease;
 
 }
+
+.category-btn:hover {
+    transform: scale(0.94)
+
+}
+
+
 .category-btn.active {
     background: #e38c3a;
 
@@ -214,9 +219,9 @@ body {
 .cart-summary {
     margin-top: 24px;
     padding: 18px;
-    border: 2px solid var(--cart);
+    border: 2px solid var(--borderNav);
     border-radius: 12px;
-    background: var(--cart);
+    background: var(--gridcolor);
     
 }
 
@@ -230,7 +235,8 @@ body {
 }
 
 
-.remove-btn {
+.remove-btn,
+.add-one-btn {
     border: 1px solid var(--cart);
     background: transparent;
     color: var(--text);
@@ -245,20 +251,38 @@ body {
 
 }
 
-.remove-btn:hover {
+.remove-btn:hover,
+.add-one-btn:hover {
     background: #e3a02399;
 }
 
-.remove-btn:active {
-    transform: scale(0.9s);
+.remove-btn:active,
+.add-one-btn:active {
+    transform: scale(0.9);
 }
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-qty {
+    min-width: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
 
 .clear-btn {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     margin: 16px auto 0;
     padding: 10px 20px;
-    border: 1px solid var(--borderNav);
+    border: 1px solid var(--gridcolor);
     border-radius: 999px;
     background: transparent;
     color: var(--text);
@@ -267,10 +291,11 @@ body {
 }
 
 .clear-btn:hover {
-    background: #e3a02399;  
+    background: var(--hover);  
     
 }
 
 .clear-btn:active {
     transform: scale(0.94);
 }
+
