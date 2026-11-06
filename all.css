@@ -5,7 +5,13 @@
     --borderNav: #d89a93;
     --gridcolor: #ad5d5d;
     --hover: #e3a02399; 
+
+    --main: rgb(40, 11, 9);
+    --mainborder: rgb(32, 32, 29);
+
 }
+
+
 
 * {
     margin: 0;
@@ -423,4 +429,63 @@ body {
 }
 .cancel-btn:active {
     transform: scale(0.9);
+}
+
+.main-page {
+    padding: 0 6vw 40vh;
+}
+
+.big-name {
+    font-size: 15vw;
+    line-height: 1;
+    color: var(--main);
+    -webkit-text-stroke: 3px var(--mainborder);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.flow-line {
+    display: block;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--main);
+    margin-bottom: 10vh;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+
+}
+
+.flow-cart {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--mainborder);
+    text-decoration: none;
+    transform-origin: left;
+    transition: opacity 0.8s ease, transform 0.4s ease, color 0.3s ease;
+}
+
+.flow-cart.show:hover {
+    color: var(--main);
+    transform: scale(1.05);
+}
+
+
+.flow-menu {
+    display: inline-block;
+    text-decoration: none;
+    transform-origin: left;
+    transition: opacity 0.8s ease, transform 0.4s ease;
+
+}
+
+.flow-menu.show:hover {
+    transform: scale(1.05);
+}
+
+.flow-line.show {
+    opacity: 1;
+    transform: translateY(0);
 }
