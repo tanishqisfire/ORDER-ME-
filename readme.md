@@ -14,6 +14,6 @@ well even so I thought to add the parts which used ai to help me figure out by a
 - the observer method on main.js,
 - the grid setting to the middle of the page of the  on the menu page.
 - the local storage reading and setting on  menu.js.
-- nav bar's sitting it on top.
+- and random css stuff like to make a button that rectange with round edges, to make the nav above the page, nav bar sitting on top.
 
 
