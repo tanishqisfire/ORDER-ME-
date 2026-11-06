@@ -17,3 +17,4 @@ well even so I thought to add the parts which used ai to help me figure out by a
 - and random css stuff like to make a button that rectange with round edges, to make the nav above the page, nav bar sitting on top.
 
 
+<img width="1133" height="735" alt="Screenshot 2026-11-06 at 2 25 49 PM" src="https://github.com/user-attachments/assets/799cb571-9f83-45ba-8284-fa5b04645417" />
